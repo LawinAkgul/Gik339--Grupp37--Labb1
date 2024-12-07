@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labb 1 - Grupp 37</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input[type="text"], button {
+            margin-bottom: 15px;
+            padding: 5px;
+            width: 100%;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            min-height: 30px;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Mellanrum mellan text och checkbox */
+            margin-bottom: 15px;
+        }
+        .checkbox-container label {
+            margin: 0;
+            white-space: nowrap; /* Förhindrar radbrytning av text */
+        }
+        .checkbox-container input {
+            margin-left: auto; /* Flytta checkboxen till höger */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Labb 1 - Grupp 37</h1>
+    <form>
+        <label for="color">Färg:</label>
+        <input type="text" name="color" id="color" class="textfield">
+
+        <label for="content">Innehåll:</label>
+        <input type="text" name="content" id="content" class="textfield">
+
+        <div class="checkbox-container">
+            <label for="divstyle">Stil på boxen:</label>
+            <input type="checkbox" name="divstyle" id="divstyle" class="checkbox">
+        </div>
+
+        <button type="button" id="submitbutton" class="button">Ta bort</button>
+    </form>
+
+    <div id="output" class="output-area"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
