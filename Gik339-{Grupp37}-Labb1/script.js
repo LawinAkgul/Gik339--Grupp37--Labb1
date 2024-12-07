@@ -5,7 +5,7 @@ const colorField = document.getElementById("color");
 const checkbox = document.getElementById("divstyle");
 const outputDiv = document.getElementById("output");
 
-// Eventlyssnare för textfält
+// Eventlistener för textfält uppgift 5
 document.addEventListener("input", (e) => {
     const target = e.target;
 
@@ -17,13 +17,13 @@ document.addEventListener("input", (e) => {
     }
 });
 
-// Eventlyssnare för checkbox
+// Eventlistener för checkbox uppgift 6
 checkbox.addEventListener("change", () => {
     const color = colorField.value; // Hämta färgvärdet från fältet
     outputDiv.style.backgroundColor = color; // Ändra bakgrundsfärg på div
 });
 
-// Eventlyssnare för knapp
+// Eventlistener för knapp uppgift 6
 button.addEventListener("click", () => {
     outputDiv.textContent = ""; // Rensa innehållet i div utan att ta bort elementet
     console.log("Innehållet i div har rensats!");
